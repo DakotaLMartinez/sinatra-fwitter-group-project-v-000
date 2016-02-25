@@ -6,5 +6,17 @@ class ApplicationController < Sinatra::Base
     set :public_folder, 'public'
     set :views, 'app/views'
   end
+  
+  get "/" do
+    erb :index
+  end
+  
+  get "/signup" do 
+    erb :create_user
+  end
+  
+  post "/signup" do 
+    "#{params}"
+  end
 
 end
