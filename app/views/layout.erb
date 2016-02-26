@@ -3,8 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <title>Fwitter</title>
+  <style>
+    body {margin: 0; padding: 0; }
+    .container {
+      width: 85%;
+      margin: 0 auto;
+    }
+    form {
+      width: 300px;
+      background: tan;
+      padding: 15px;
+      border: 3px solid black;
+    }
+    label { 
+      display: inline-block;
+      width: 70px;
+    }
+  </style>
 </head>
 <body>
-  <%= yield %>
+  <div class="container">
+    <%= yield %>
+  </div>
 </body>
 </html>
