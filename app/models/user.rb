@@ -4,4 +4,5 @@ class User < ActiveRecord::Base
   validates_presence_of :username, :email, :password
   
   include Concerns::Slugifiable
+  extend Concerns::Findable
 end
